@@ -13,7 +13,8 @@ import Employee from "./sidebar/Employee";
 import Stock from "./sidebar/Stock";
 import Finance from "./sidebar/Finance";
 import Sales from "./sidebar/Sales";
-import Business from "./sidebar/Business";
+// import Business from "./sidebar/Business";
+import Agent from "./sidebar/Agent";
 import Team from "./sidebar/Team";
 import Assigment from "./sidebar/Assigment";
 import "./Sidebar.css";
@@ -76,7 +77,8 @@ function Sidebar() {
           <Depart />
           <Employee />
           <Team />
-          <Business />
+          <Agent />
+          {/* <Business /> */}
           <Assigment />
           <PreProject />
           <Project />

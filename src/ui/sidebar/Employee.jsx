@@ -1,11 +1,13 @@
 import { useState } from "react";
 import SubItems from "../sideBarItems/SubItems";
 const array = [
+  { value: "Employee", to: "/employee/Employee" },
   { value: "Company Profile", to: "/employee/companyProfile" },
   { value: "Bank & Others", to: "/employee/bank" },
   { value: "Salary", to: "/employee/salary" },
   { value: "Document", to: "/employee/document" },
   { value: "KYC", to: "/employee/KYC" },
+  // { value: "Profile", to: "/employee/Profile" },
 ];
 function Employee() {
   const [show, setShow] = useState(false);

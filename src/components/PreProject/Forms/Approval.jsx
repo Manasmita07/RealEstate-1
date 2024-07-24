@@ -33,12 +33,11 @@ function Approval({ register }) {
                       <option value="ORERA">ORERA</option>
                       <option value="BMC">BMC</option>
                     </select>
-                    <span
+                    {/* <span
                       className="select2 select2-container select2-container--default"
                       dir="ltr"
                       data-select2-id="1"
-                      style={{ width: "434.388px" }}
-                    >
+                      style={{ width: "434.388px" }}>
                       <span className="selection">
                         <span
                           className="select2-selection select2-selection--multiple"
@@ -71,7 +70,7 @@ function Approval({ register }) {
                         className="dropdown-wrapper"
                         aria-hidden="true"
                       ></span>
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </div>
@@ -92,7 +91,7 @@ function Approval({ register }) {
               <div className="col-md-4 col-sm-6 col-12">
                 <div className="mb-3">
                   <label for="largeSelect" className="form-label">
-                    Employeet
+                    Employee
                   </label>
                   <select
                     id="employee"
@@ -100,7 +99,7 @@ function Approval({ register }) {
                     className="form-select"
                   >
                     <option value="Employeet">Employee</option>
-                    {dropDowns?.map((el) => (
+                    {dropDowns?.map(el => (
                       <option value={el.company_profile.empid}>
                         {el.company_profile.name}
                       </option>

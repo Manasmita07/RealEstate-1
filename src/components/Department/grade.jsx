@@ -14,9 +14,8 @@ const Grade = () => {
         const response = await axios.get(
           `${API_BASE_URL}/api/department_grade_handler/`
         );
-console.log(response.data);
+        console.log(response.data);
         if (response.data) {
-          
           setGrades(response.data);
         }
       } catch (error) {
@@ -29,7 +28,6 @@ console.log(response.data);
           `${API_BASE_URL}/api/department_label_handler/`
         );
         if (response.data) {
-         
           setLevels(response.data);
         }
       } catch (error) {
@@ -38,17 +36,16 @@ console.log(response.data);
     };
     fetchAllGrades();
     fetchAllLevels();
-   
   }, []);
-  const handleSubmit = async (event) => {
+  const handleSubmit = async event => {
     event.preventDefault();
     if (!levels || !description) {
       return;
     }
     const formData = {
-      "label": level,
-      "grade_description": description,
-      "status":status,
+      label: level,
+      grade_description: description,
+      status: status,
     };
     try {
       const response = await fetch(
@@ -66,8 +63,8 @@ console.log(response.data);
         const result = await response.json();
         console.log("Form submitted successfully:", result);
         fetch(`${API_BASE_URL}/api/department_grade_handler/`)
-          .then((response) => response.json())
-          .then((data) => {
+          .then(response => response.json())
+          .then(data => {
             setGrades(data);
           });
       } else {
@@ -109,10 +106,10 @@ console.log(response.data);
                   <thead className="table-secondary">
                     <tr>
                       <td>SL No</td>
-                      <td>Label ID</td>
-                      <td>Grdae Desc</td>
-                      <td>Status</td>
-                      <td>Action</td>
+                      <td>Level </td>
+                      <td>Grade </td>
+                      {/* <td>Status</td>
+                      <td>Action</td> */}
                     </tr>
                   </thead>
                   <tbody>
@@ -121,7 +118,7 @@ console.log(response.data);
                         <td>{index + 1}</td>
                         <td>{item.label}</td>
                         <td>{item.grade_description}</td>
-                        <td>{item.status }</td>
+                        <td>{item.status}</td>
                         <td>
                           <a
                             href=""
@@ -144,6 +141,33 @@ console.log(response.data);
                         </td>
                       </tr>
                     ))}
+                      {/* op */}
+                <tr>
+          <td>{grades+1}</td>
+          <td>Level</td>
+          <td>Grade</td>
+          
+          {/* <td>
+            <a
+              href=""
+              className="btn btn-text-primary btn-sm small py-1 px-2"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-original-title="Edit"
+            >
+              <i className="mdi mdi-pencil-outline" />
+            </a>
+            <a
+              href=""
+              className="btn btn-text-danger btn-sm small py-1 px-2"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-original-title="Delete"
+            >
+              <i className="mdi mdi-trash-can" />
+            </a>
+          </td> */}
+        </tr>
                   </tbody>
                 </table>
               </div>
@@ -175,7 +199,7 @@ console.log(response.data);
                           id=""
                           className="select2 form-select"
                           value={level}
-                          onChange={(e) => setLevel(JSON.parse(e.target.value))}
+                          onChange={e => setLevel(JSON.parse(e.target.value))}
                         >
                           <option value="">Select Menu</option>
                           {levels?.map((item, index) => (
@@ -196,7 +220,7 @@ console.log(response.data);
                         placeholder=""
                         style={{ height: 60 }}
                         value={description}
-                        onChange={(e) => setDescription(e.target.value)}
+                        onChange={e => setDescription(e.target.value)}
                       />
                     </div>
                   </div>
@@ -213,7 +237,7 @@ console.log(response.data);
                             type="radio"
                             value="true"
                             checked={status === "true"}
-                            onChange={(e) => setStatus(e.target.value)}
+                            onChange={e => setStatus(e.target.value)}
                           />
                           <label
                             className="form-check-label"
@@ -229,7 +253,7 @@ console.log(response.data);
                             type="radio"
                             value="false"
                             checked={status === "false"}
-                            onChange={(e) => setStatus(e.target.value)}
+                            onChange={e => setStatus(e.target.value)}
                           />
                           <label
                             className="form-check-label"

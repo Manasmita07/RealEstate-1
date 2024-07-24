@@ -135,8 +135,55 @@ function NewProject() {
                         id="project_area"
                         {...register("project_area")}
                         className="form-control"
-                        type="number"
+                        type="text"
                         placeholder="Project Area"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+
+                  {/* New add */}
+                  <div className="col-md-4 col-sm-6 col-12">
+                    <div className="mb-3">
+                      <label for="defaultInput" className="form-label">
+                        Address
+                      </label>
+                      <input
+                        id="project_name"
+                        {...register("project_name")}
+                        className="form-control"
+                        type="text"
+                        placeholder="Address"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-4 col-sm-6 col-12">
+                    <div className="mb-3">
+                      <label for="defaultInput" className="form-label">
+                        Lat/Long
+                      </label>
+                      <input
+                        id="project_name"
+                        {...register("project_name")}
+                        className="form-control"
+                        type="text"
+                        placeholder="Lat/Long"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-4 col-sm-6 col-12">
+                    <div className="mb-3">
+                      <label for="defaultInput" className="form-label">
+                        Measurement
+                      </label>
+                      <input
+                        id="project_name"
+                        {...register("project_name")}
+                        className="form-control"
+                        type="text"
+                        placeholder="Measurement"
                         autocomplete="off"
                       />
                     </div>

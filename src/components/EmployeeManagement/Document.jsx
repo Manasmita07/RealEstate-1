@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import "./Document.css";
 
 const Document = () => {
   const [documents, setDocuments] = useState([
@@ -15,7 +16,7 @@ const Document = () => {
     ]);
   };
 
-  const handleDelete = (index) => {
+  const handleDelete = index => {
     const updatedDocuments = documents.filter((_, i) => i !== index);
     setDocuments(updatedDocuments);
   };
@@ -27,7 +28,7 @@ const Document = () => {
     setDocuments(updatedDocuments);
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async event => {
     event.preventDefault();
     const formData = new FormData();
 
@@ -47,12 +48,17 @@ const Document = () => {
         headers: {
           "Content-Type": "multipart/form-data",
         },
-
       });
-      if (res.status===201){
+      if (res.status === 201) {
         toast.success("Document submitted successfully");
         setDocuments([
-          { file: null, name: "", document_no: "", validity: "", issued_by: "" },
+          {
+            file: null,
+            name: "",
+            document_no: "",
+            validity: "",
+            issued_by: "",
+          },
         ]);
       }
       console.log(res);
@@ -75,7 +81,7 @@ const Document = () => {
             <div className="card-body">
               <form
                 className="form-repeater"
-                onSubmit={(e) => handleSubmit(e, documents)}
+                onSubmit={e => handleSubmit(e, documents)}
               >
                 {documents.map((document, index) => (
                   <div key={index} data-repeater-item>
@@ -85,7 +91,7 @@ const Document = () => {
                           <input
                             type="file"
                             className="form-control"
-                            onChange={(e) =>
+                            onChange={e =>
                               handleChange(index, "file", e.target.files[0])
                             }
                             required
@@ -101,7 +107,7 @@ const Document = () => {
                             className="form-control"
                             type="text"
                             value={document.name}
-                            onChange={(e) =>
+                            onChange={e =>
                               handleChange(index, "name", e.target.value)
                             }
                             placeholder="Document Name"
@@ -117,7 +123,7 @@ const Document = () => {
                             className="form-control"
                             type="number"
                             value={document.document_no}
-                            onChange={(e) =>
+                            onChange={e =>
                               handleChange(index, "document_no", e.target.value)
                             }
                             placeholder="Document No"
@@ -133,7 +139,7 @@ const Document = () => {
                             className="form-control"
                             type="date"
                             value={document.validity}
-                            onChange={(e) =>
+                            onChange={e =>
                               handleChange(index, "validity", e.target.value)
                             }
                             placeholder="Validity"
@@ -147,7 +153,7 @@ const Document = () => {
                             className="form-control"
                             type="text"
                             value={document.issued_by}
-                            onChange={(e) =>
+                            onChange={e =>
                               handleChange(index, "issued_by", e.target.value)
                             }
                             placeholder="Issued By"
@@ -166,6 +172,18 @@ const Document = () => {
                           <i className="mdi mdi-close me-1"></i>
                           <span className="align-middle">Delete</span>
                         </button>
+                        <div class="toggle-wrapper">
+                          <span class="ml">
+                            <strong>Inactive</strong>
+                          </span>
+                          <label class="toggle-container">
+                            <input type="checkbox" />
+                            <div class="toggle-switch"></div>
+                          </label>
+                          <span>
+                            <strong>Active</strong>
+                          </span>
+                        </div>
                       </div>
                     </div>
                     <hr />

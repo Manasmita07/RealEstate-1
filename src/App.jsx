@@ -49,6 +49,7 @@ import AddAmenity from "./components/Project/AddAmenity";
 import AddCommission from "./components/Project/AddCommission";
 import AddTaxOthers from "./components/Project/AddTaxOthers";
 
+import Employee from "./components/EmployeeManagement/Employee";
 import Document from "./components/EmployeeManagement/Document";
 import Kyc from "./components/EmployeeManagement/Kyc";
 import Salary from "./components/EmployeeManagement/Salary";
@@ -91,7 +92,10 @@ import FollowUp from "./components/FollowUp/FollowUp";
 
 import GoalAndTarget from "./components/Incentives/GoalAndTarget";
 
-import Module from "./components/Rolesandright/Module";
+// import Module from "./components/Rolesandright/Module";
+import Module from "./components/Rolesandright/Module/Module";
+import SubModule from "./components/Rolesandright/Module/SubModule";
+import Functionality from "./components/Rolesandright/Module/Functionality";
 
 import Territory from "./components/BusinessManagement/Territory";
 import Area from "./components/BusinessManagement/Area";
@@ -103,6 +107,10 @@ import Village from "./components/BusinessManagement/Location/Village";
 import AreaGram from "./components/BusinessManagement/Location/AreaGram";
 import Pin from "./components/BusinessManagement/Location/Pin";
 import { Toaster } from "react-hot-toast";
+
+import Profile from "./components/EmployeeManagement/Profile";
+import Agent_Type from "./components/AgentManagement/Agent_Type";
+import AgentProfile from "./components/AgentManagement/AgentProfile";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -136,7 +144,16 @@ const App = () => {
             <Route path="/businessManagement/areaGram" element={<AreaGram />} />
             <Route path="/businessManagement/pin" element={<Pin />} />
             <Route path="/rolesRight" element={<RolesAndRights />} />
-            <Route path="/rolesRight/moduleForm" element={<Module />} />
+            {/* <Route path="/rolesRight/moduleForm" element={<Module />} /> */}
+            <Route path="/rolesRight/Module/moduleForm" element={<Module />} />
+            <Route
+              path="/rolesRight/Module/subModule"
+              element={<SubModule />}
+            />
+            <Route
+              path="/rolesRight/Module/Functionality"
+              element={<Functionality />}
+            />
             <Route element={<SystemAdmin />}>
               <Route path="systemAdmin/companyInfo" element={<CompanyInfo />} />
               <Route
@@ -229,6 +246,14 @@ const App = () => {
             <Route path="/customer" element={<Customer />} />
             <Route path="/customer/addCustomer" element={<AddCustomerForm />} />
             <Route path="/teamManagement" element={<TeamManagement />} />
+            <Route
+              path="/AgentManagement/Agent_Type"
+              element={<Agent_Type />}
+            />
+            <Route
+              path="/AgentManagement/AgentProfile"
+              element={<AgentProfile />}
+            />
             <Route path="/followUp" element={<FollowUp />} />
             <Route
               path="/followUp/preSalesEnquiry"
@@ -264,8 +289,14 @@ const App = () => {
             <Route path="/project/addproduct/:id" element={<AddProduct />} />
             <Route path="/project/addpayment/:id" element={<AddPayment />} />
             <Route path="/project/addAmenity/:id" element={<AddAmenity />} />
-            <Route path="/project/addCommission/:id" element={<AddCommission />} />
-            <Route path="/project/addTaxOthers/:id" element={<AddTaxOthers />} />
+            <Route
+              path="/project/addCommission/:id"
+              element={<AddCommission />}
+            />
+            <Route
+              path="/project/addTaxOthers/:id"
+              element={<AddTaxOthers />}
+            />
             <Route
               path="/project/projecthouselist"
               element={<ProjectHouseList />}
@@ -276,8 +307,10 @@ const App = () => {
               path="/employee/companyProfile"
               element={<Companyprofile />}
             />
+            <Route path="/employee/employee" element={<Employee />} />
             <Route path="/employee/salary" element={<Salary />} />
             <Route path="/employee/KYC" element={<Kyc />} />
+            <Route path="/employee/profile" element={<Profile />} />
           </Route>
         </Routes>
         <Toaster position="top-center" />

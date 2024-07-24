@@ -3,7 +3,7 @@ import SubItems from "../sideBarItems/SubItems";
 const array = [
   { value: "Department Name", to: "/department/departmentName" },
   { value: "Designation", to: "/department/designation" },
-  { value: "Level", to: "/department/level" },
+  // { value: "Level", to: "/department/level" },
   { value: "Grade", to: "/department/grade" },
   { value: "Organisation Structure", to: "department/organisationStr" },
 ];

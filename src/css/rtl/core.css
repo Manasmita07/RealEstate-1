@@ -4,6 +4,8 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @import 'react-flow-renderer/dist/style.css';
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #26c6f9;
@@ -781,7 +783,6 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-
 
 .row > * {
   flex-shrink: 0;
@@ -22788,6 +22789,55 @@ html:not([dir="rtl"]) .menu-inner > .menu-header::before {
   transition: margin-left 0.3s ease;
 }
 
+/* Manasmita */
+.module-title {
+  display: flex;
+  align-items: center;
+}
+
+.module-icon {
+  margin-left: 55px;
+  font-size: 1.2rem; /* Adjust size as needed */
+  transition: transform 0.3s;
+}
+
+.module-icon.open {
+  transform: rotate(45deg); /* Rotate the plus icon when expanded */
+}
+
+.menu-sub {
+  display: none; /* Hide menu items by default */
+  padding-left: 20px; /* Adjust padding as needed */
+}
+
+.menu-sub.show {
+  display: block; /* Show menu items when expanded */
+}
+/* kk */
+.module-title {
+  display: flex;
+  align-items: center;
+}
+
+.module-icon {
+  margin-left: 55px;
+  font-size: 1.2rem; /* Adjust size as needed */
+  transition: transform 0.3s;
+}
+
+.module-icon.open {
+  transform: rotate(45deg); /* Rotate the plus icon when expanded */
+}
+
+.menu-sub {
+  display: none; /* Hide menu items by default */
+  padding-left: 20px; /* Adjust padding as needed */
+}
+
+.menu-sub.show {
+  display: block; /* Show menu items when expanded */
+}
+/* kk */
 .menu-link {
   position: relative;
   display: flex;
