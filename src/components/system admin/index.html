@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Real Estate CRM</title>
+    <meta name="description" content="" />    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap"
+      rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/materialdesignicons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+    <!-- Menu waves for no-customizer fix -->
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+ 
+
+
+    <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css" />
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/pages/cards-statistics.css" />
+    <link rel="stylesheet" href="assets/vendor/css/pages/cards-analytics.css" />
+      <!-- Helpers -->
+   <!-- Vendors CSS -->
+   
+    <!-- Vendor -->
+    <link rel="stylesheet" href="assets/vendor/libs/@form-validation/umd/styles/index.min.css" />
+    <!-- Page CSS -->
+    <!-- Page -->
+    <link rel="stylesheet" href="assets/vendor/css/pages/page-auth.css" />
+
+    <!-- Content -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+<body>
+
+
+ 
+
+
+    <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+
+    <link rel="stylesheet" href="assets/vendor/libs/quill/typography.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/quill/katex.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/quill/editor.css" />
+
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+          
+
+ <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+      <div class="app-brand demo">
+            <a href="index.php" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <img src="assets/img/branding/crm_logo.png" width="60px" alt="">
+              </span>
+
+           
+              <span class="app-brand-text demo menu-text fw-bold ms-2">Real Estate</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.4854 4.88844C11.0081 4.41121 10.2344 4.41121 9.75715 4.88844L4.51028 10.1353C4.03297 10.6126 4.03297 11.3865 4.51028 11.8638L9.75715 17.1107C10.2344 17.5879 11.0081 17.5879 11.4854 17.1107C11.9626 16.6334 11.9626 15.8597 11.4854 15.3824L7.96672 11.8638C7.48942 11.3865 7.48942 10.6126 7.96672 10.1353L11.4854 6.61667C11.9626 6.13943 11.9626 5.36568 11.4854 4.88844Z"
+                  fill="currentColor"
+                  fill-opacity="0.6" />
+                <path
+                  d="M15.8683 4.88844L10.6214 10.1353C10.1441 10.6126 10.1441 11.3865 10.6214 11.8638L15.8683 17.1107C16.3455 17.5879 17.1192 17.5879 17.5965 17.1107C18.0737 16.6334 18.0737 15.8597 17.5965 15.3824L14.0778 11.8638C13.6005 11.3865 13.6005 10.6126 14.0778 10.1353L17.5965 6.61667C18.0737 6.13943 18.0737 5.36568 17.5965 4.88844C17.1192 4.41121 16.3455 4.41121 15.8683 4.88844Z"
+                  fill="currentColor"
+                  fill-opacity="0.38" />
+              </svg>
+            </a>
+          </div>
+    <div class="menu-inner-shadow"></div>
+
+<ul class="menu-inner py-1">
+    <!-- Dashboards -->
+    <li class="menu-item">
+      <a href="index.php" class="menu-link">
+        <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
+        <div data-i18n="Dashboards">Dashboards</div>
+      </a>
+    </li>
+     <li class="menu-item">
+      <a href="roles_right.php" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
+        <div data-i18n="Roles & Right">Roles & Right</div>
+      </a>
+       <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="roles_right.php" class="menu-link">
+            <div data-i18n="Roles Right">Roles Right</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="module_form.php" class="menu-link">
+            <div data-i18n="module">module</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Department menu start -->
+     <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-notebook-outline"></i>
+        <div data-i18n="System Admin">System Admin</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="company_type.php" class="menu-link">
+            <div data-i18n="Company Type">Company Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="company_info_list.php" class="menu-link">
+            <div data-i18n="Company Info">Company Info</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="branch_type.php" class="menu-link">
+            <div data-i18n="Branch Type">Branch Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="branch_info_list.php" class="menu-link">
+            <div data-i18n="Branch Info">Branch Info</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="bank_info_list.php" class="menu-link">
+            <div data-i18n="Bank Info">Bank Info</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="board_directors_list.php" class="menu-link">
+            <div data-i18n="Board Of Directors">Board Of Directors</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-notebook-outline"></i>
+        <div data-i18n="Department">Department</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="department_name.php" class="menu-link">
+            <div data-i18n="Department Name">Department Name</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="designation.php" class="menu-link">
+            <div data-i18n="Designation">Designation</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="label.php" class="menu-link">
+            <div data-i18n="Level">Level</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="grade.php" class="menu-link">
+            <div data-i18n="Grade">Grade</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="organisation_str.php" class="menu-link">
+            <div data-i18n="Organisation Structure">Organisation Structure</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+      <!-- Employee Management menu start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-notebook-outline"></i>
+        <div data-i18n="Employee Management">Employee Management</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="company_profile2.php" class="menu-link">
+            <div data-i18n="Company Profile">Company Profile</div>
+          </a>
+        </li>
+       <!--  <li class="menu-item">
+          <a href="company_profile.php" class="menu-link">
+            <div data-i18n="Company Profile">Company Profile</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="employee_address.php" class="menu-link">
+            <div data-i18n="Address">Address</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="employee_personal_profile.php" class="menu-link">
+            <div data-i18n="Personal Profile">Personal Profile</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="emp_family_profile.php" class="menu-link">
+            <div data-i18n="Family Profile">Family Profile</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="emp_edu_profile.php" class="menu-link">
+            <div data-i18n="Education Profile">Education Profile</div>
+          </a>
+        </li>
+            <li class="menu-item">
+          <a href="emp_training_cert.php" class="menu-link">
+            <div data-i18n="Training & Education Certification">Training & Education Certification</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="emp_experience.php" class="menu-link">
+            <div data-i18n="Experience">Experience</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="skill_level.php" class="menu-link">
+            <div data-i18n="Skill Level">Skill Level</div>
+          </a>
+        </li> -->
+        <li class="menu-item">
+          <a href="emp_bank_others.php" class="menu-link">
+            <div data-i18n="Bank & Others">Bank & Others</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="emp_salary.php" class="menu-link">
+            <div data-i18n="Salary">Salary</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="emp_document.php" class="menu-link">
+            <div data-i18n="Document">Document</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="kyc.php" class="menu-link">
+            <div data-i18n="KYC">KYC</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="team_management.php" class="menu-link">
+        <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
+        <div data-i18n="Team Management">Team Management</div>
+      </a>
+    </li>
+
+
+      <!--Business Management menu start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-form-select"></i>
+        <div data-i18n="Business Management">Business Management</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle waves-effect">
+            <div data-i18n="Location Master">Location Master</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="country.php" class="menu-link">
+                <div data-i18n="Country"> Country</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="state.php" class="menu-link">
+                <div data-i18n="State">State</div> 
+              </a>
+            </li>
+             <li class="menu-item">
+              <a href="district.php" class="menu-link">
+                <div data-i18n="City / District">City / District</div> 
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="area_gp.php" class="menu-link">
+                <div data-i18n="Area / G.P">Area / G.P</div> 
+              </a>
+            </li>
+             <li class="menu-item">
+              <a href="village.php" class="menu-link">
+                <div data-i18n="Village">Village</div> 
+              </a>
+            </li>
+             <li class="menu-item">
+              <a href="location_pin.php" class="menu-link">
+                <div data-i18n="PIN">PIN</div> 
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="zone_segment.php" class="menu-link">
+            <div data-i18n="Zone / Segment">Zone / Segment</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="area.php" class="menu-link">
+            <div data-i18n="Area">Area</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="territory.php" class="menu-link">
+            <div data-i18n="Territory">Territory</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Point">Point</div>
+          </a>
+      </ul>
+    </li>
+    <!--Business Management End -->
+    <li class="menu-item">
+      <a href="#" class="menu-link">
+        <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
+        <div data-i18n="Assignment">Assignment</div>
+      </a>
+    </li>
+    <!--Pre - Projectmenu start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-form-select"></i>
+        <div data-i18n="Pre Project">Pre Project</div>
+      </a>
+      <ul class="menu-sub">
+     <!--    <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Location Master">Location Master</div>
+          </a>
+        </li> -->
+        <li class="menu-item">
+          <a href="pre_new_project.php" class="menu-link">
+            <div data-i18n="New Project Development">New Project Development</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Confirmed Project">Confirmed Project</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!--Business Management End -->
+    <!--Projects start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+        <div data-i18n="Projects">Projects</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="project_type.php" class="menu-link">
+            <div data-i18n="Project Type">Project Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pro_paymt_schedule.php" class="menu-link">
+            <div data-i18n="Payment Schedule">Payment Schedule</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pro_product_type.php" class="menu-link">
+            <div data-i18n="Product Type">Product Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pro_raise_cost_type.php" class="menu-link">
+            <div data-i18n="Raise Cost Type">Raise Cost Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pro_amenity_mast.php" class="menu-link">
+            <div data-i18n="Amenity Master">Amenity Master</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pro_nearby_mast.php" class="menu-link">
+            <div data-i18n="Nearby Master">Nearby Master</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pro_facing_mast.php" class="menu-link">
+            <div data-i18n="Facing Master">Facing Master</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pro_commission_setup.php" class="menu-link">
+            <div data-i18n="Commission Setup">Commission Setup</div>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="ownership_type.php" class="menu-link">
+            <div data-i18n="Ownership Type">Ownership Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="approval_body.php" class="menu-link">
+            <div data-i18n="Approval Body">Approval Body</div>
+          </a>
+        </li>
+
+         <li class="menu-item">
+          <a href="tax_list.php" class="menu-link">
+            <div data-i18n="Tax">Tax</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="project_dashboard.php" class="menu-link">
+            <div data-i18n="Project">Project</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!--Projects End -->
+    <!--Enquiry Bucket start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-form-select"></i>
+        <div data-i18n="Enquiry Bucket">Enquiry Bucket</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="quotation_type.php" class="menu-link">
+            <div data-i18n="Quotation Type">Quotation Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="visit_type.php" class="menu-link">
+            <div data-i18n="Visit Type">Visit Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="communication_type.php" class="menu-link">
+            <div data-i18n="Communication Type">Communication Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="source_type.php" class="menu-link">
+            <div data-i18n="Source Type">Source Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="enquiry_type.php" class="menu-link">
+            <div data-i18n="Enquiry Type">Enquiry Type</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="lead_enquiry_stage.php" class="menu-link">
+            <div data-i18n="Lead Enquiry Stage">Lead Enquiry Stage</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="lead_enquiry_status.php" class="menu-link">
+            <div data-i18n="Lead Enquiry Status">Lead Enquiry Status</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="lead_activity_status.php" class="menu-link">
+            <div data-i18n="Lead Activity Status">Lead Activity Status</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="customer_form_list.php" class="menu-link">
+            <div data-i18n="Customer Form">Customer Form</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="buyer_persona.php" class="menu-link">
+            <div data-i18n="Buyer's Persona">Buyer's Persona</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="enquiry_table.php" class="menu-link">
+            <div data-i18n="Enquiry Table">Enquiry Table</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="dead_table.php" class="menu-link">
+            <div data-i18n="Dead Table">Dead Table</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!--Enquiry Bucket End -->
+     <!--FollowUp start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-flip-to-front"></i>
+        <div data-i18n="FollowUp">FollowUp</div>
+      </a>
+      <ul class="menu-sub">
+         <li class="menu-item">
+          <a href="followup.php" class="menu-link">
+            <div data-i18n="FollowUp">FollowUp</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pre_sales_enquiry.php" class="menu-link">
+            <div data-i18n="Pre Sales Enquiry">Pre Sales Enquiry</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="quotation.php" class="menu-link">
+            <div data-i18n="Quotation">Quotation</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Visit">Visit</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!--FollowUp End -->
+     <!--incentive -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-flip-to-front"></i>
+        <div data-i18n="incentive">incentive</div>
+      </a>
+     <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Product Incentive">Product Incentive</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="javascript:void(0);" class="menu-link menu-toggle waves-effect">
+            <div data-i18n="Performance">Performance</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="goals_targets.php" class="menu-link">
+                <div data-i18n="Goal and Target">Goal and Target</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+<!--incentive End-->
+    <!--Sales start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+        <div data-i18n="Sales">Sales</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="payment_recipt.php" class="menu-link">
+            <div data-i18n="Payment Recipt">Payment Recipt</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="payment_schedule.php" class="menu-link">
+            <div data-i18n="Payment Schedule">Payment Schedule</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="sales_agreement.php" class="menu-link">
+            <div data-i18n="Sales Agreement">Sales Agreement</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Collection">Collection</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Demand Letted Master">Demand Letted Master</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Penalty Master">Penalty Master</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Cancelation Policy">Cancelation Policy</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Cancelation and Refund">Cancelation and Refund</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Full and Final Settlement">Full and Final Settlement</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!--Sales End -->
+    <!--Post Sales start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+        <div data-i18n="Post Sales">Post Sales</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Registration">Registration</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Key handover">Key handover</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="OC/CC">OC/CC</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!--Customer End -->
+    <li class="menu-item">
+      <a href="customer.php" class="menu-link">
+        <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
+        <div data-i18n="Customer">Customer</div>
+      </a>
+    </li>
+    <!--Customer End -->
+     <!--Stock start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+        <div data-i18n="Stock">Stock</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Project Wise Stock">Project Wise Stock</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Product wise Stock">Product wise Stock</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+     <!--Finance  start -->
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons mdi mdi-file-document-outline"></i>
+        <div data-i18n="Finance">Finance</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Payment Receipt">Payment Receipt</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Demand Generation">Demand Generation</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Salary">Salary</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Commision">Commision</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Receivables">Receivables</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Profit and Loss Report">Profit and Loss Report</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <div data-i18n="Expenses">Expenses</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <!--Projects End -->
+  </ul>
+</aside>        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+    <nav
+      class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+      id="layout-navbar">
+      <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+          <i class="mdi mdi-menu mdi-24px"></i>
+        </a>
+      </div>
+
+      <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+        <!-- Search -->
+        <div class="navbar-nav align-items-center">
+          <div class="nav-item navbar-search-wrapper mb-0">
+            <a class="nav-item nav-link search-toggler fw-normal px-0" href="javascript:void(0);">
+              <i class="mdi mdi-magnify mdi-24px scaleX-n1-rtl"></i>
+              <span class="d-none d-md-inline-block text-muted">Search</span>
+            </a>
+          </div>
+        </div>
+        <!-- /Search -->
+
+        <ul class="navbar-nav flex-row align-items-center ms-auto">
+          <!-- Style Switcher -->
+          <li class="nav-item dropdown-style-switcher dropdown me-1 me-xl-0">
+            <a
+              class="nav-link btn btn-text-secondary rounded-pill btn-icon dropdown-toggle hide-arrow"
+              href="javascript:void(0);"
+              data-bs-toggle="dropdown">
+              <i class="mdi mdi-24px"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0);" data-theme="light">
+                  <span class="align-middle"><i class="mdi mdi-weather-sunny me-2"></i>Light</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0);" data-theme="dark">
+                  <span class="align-middle"><i class="mdi mdi-weather-night me-2"></i>Dark</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0);" data-theme="system">
+                  <span class="align-middle"><i class="mdi mdi-monitor me-2"></i>System</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- / Style Switcher-->
+
+          <!-- Quick links  -->
+          <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-1 me-xl-0">
+            <a
+              class="nav-link btn btn-text-secondary rounded-pill btn-icon dropdown-toggle hide-arrow"
+              href="javascript:void(0);"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false">
+              <i class="mdi mdi-view-grid-plus-outline mdi-24px"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end py-0">
+              <div class="dropdown-menu-header border-bottom">
+                <div class="dropdown-header d-flex align-items-center py-3">
+                  <h5 class="text-body mb-0 me-auto">Shortcuts</h5>
+                  <a
+                    href="javascript:void(0)"
+                    class="dropdown-shortcuts-add text-muted"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Add shortcuts"
+                    ><i class="mdi mdi-view-grid-plus-outline mdi-24px"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="dropdown-shortcuts-list scrollable-container">
+                <div class="row row-bordered overflow-visible g-0">
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="mdi mdi-calendar fs-4"></i>
+                    </span>
+                    <a href="app-calendar.html" class="stretched-link">Calendar</a>
+                    <small class="text-muted mb-0">Appointments</small>
+                  </div>
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="mdi mdi-file-document-outline fs-4"></i>
+                    </span>
+                    <a href="app-invoice-list.html" class="stretched-link">Invoice App</a>
+                    <small class="text-muted mb-0">Manage Accounts</small>
+                  </div>
+                </div>
+                <div class="row row-bordered overflow-visible g-0">
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="mdi mdi-account-outline fs-4"></i>
+                    </span>
+                    <a href="app-user-list.html" class="stretched-link">User App</a>
+                    <small class="text-muted mb-0">Manage Users</small>
+                  </div>
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="mdi mdi-shield-check-outline fs-4"></i>
+                    </span>
+                    <a href="app-access-roles.html" class="stretched-link">Role Management</a>
+                    <small class="text-muted mb-0">Permission</small>
+                  </div>
+                </div>
+                <div class="row row-bordered overflow-visible g-0">
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="mdi mdi-chart-pie-outline fs-4"></i>
+                    </span>
+                    <a href="index.html" class="stretched-link">Dashboard</a>
+                    <small class="text-muted mb-0">Analytics</small>
+                  </div>
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="mdi mdi-cog-outline fs-4"></i>
+                    </span>
+                    <a href="pages-account-settings-account.html" class="stretched-link">Setting</a>
+                    <small class="text-muted mb-0">Account Settings</small>
+                  </div>
+                </div>
+                <div class="row row-bordered overflow-visible g-0">
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="mdi mdi-help-circle-outline fs-4"></i>
+                    </span>
+                    <a href="pages-faq.html" class="stretched-link">FAQs</a>
+                    <small class="text-muted mb-0">FAQs & Articles</small>
+                  </div>
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="mdi mdi-dock-window fs-4"></i>
+                    </span>
+                    <a href="modal-examples.html" class="stretched-link">Modals</a>
+                    <small class="text-muted mb-0">Useful Popups</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Quick links -->
+
+          <!-- Notification -->
+          <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-2 me-xl-1">
+            <a
+              class="nav-link btn btn-text-secondary rounded-pill btn-icon dropdown-toggle hide-arrow"
+              href="javascript:void(0);"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false">
+              <i class="mdi mdi-bell-outline mdi-24px"></i>
+              <span
+                class="position-absolute top-0 start-50 translate-middle-y badge badge-dot bg-danger mt-2 border"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end py-0">
+              <li class="dropdown-menu-header border-bottom">
+                <div class="dropdown-header d-flex align-items-center py-3">
+                  <h6 class="mb-0 me-auto">Notification</h6>
+                  <span class="badge rounded-pill bg-label-primary">8 New</span>
+                </div>
+              </li>
+              <li class="dropdown-notifications-list scrollable-container">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1 text-truncate">Congratulation Lettie 🎉</h6>
+                        <small class="text-truncate text-body">Won the monthly best seller gold badge</small>
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">1h ago</small>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <span class="avatar-initial rounded-circle bg-label-danger">CF</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1 text-truncate">Charles Franklin</h6>
+                        <small class="text-truncate text-body">Accepted your connection</small>
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">12hr ago</small>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <img src="assets/img/avatars/2.png" alt class="w-px-40 h-auto rounded-circle" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1 text-truncate">New Message ✉️</h6>
+                        <small class="text-truncate text-body">You have new message from Natalie</small>
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">1h ago</small>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <span class="avatar-initial rounded-circle bg-label-success"
+                            ><i class="mdi mdi-cart-outline"></i
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1 text-truncate">Whoo! You have new order 🛒</h6>
+                        <small class="text-truncate text-body">ACME Inc. made new order $1,154</small>
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">1 day ago</small>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <img src="assets/img/avatars/9.png" alt class="w-px-40 h-auto rounded-circle" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1 text-truncate">Application has been approved 🚀</h6>
+                        <small class="text-truncate text-body"
+                          >Your ABC project application has been approved.</small
+                        >
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">2 days ago</small>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <span class="avatar-initial rounded-circle bg-label-success"
+                            ><i class="mdi mdi-chart-pie-outline"></i
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1 text-truncate">Monthly report is generated</h6>
+                        <small class="text-truncate text-body">July monthly financial report is generated </small>
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">3 days ago</small>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <img src="assets/img/avatars/5.png" alt class="w-px-40 h-auto rounded-circle" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1 text-truncate">Send connection request</h6>
+                        <small class="text-truncate text-body">Peter sent you connection request</small>
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">4 days ago</small>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <img src="assets/img/avatars/6.png" alt class="w-px-40 h-auto rounded-circle" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1 text-truncate">New message from Jane</h6>
+                        <small class="text-truncate text-body">Your have new message from Jane</small>
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">5 days ago</small>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                    <div class="d-flex gap-2">
+                      <div class="flex-shrink-0">
+                        <div class="avatar me-1">
+                          <span class="avatar-initial rounded-circle bg-label-warning"
+                            ><i class="mdi mdi-alert-circle-outline"></i
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 overflow-hidden w-px-200">
+                        <h6 class="mb-1">CPU is running high</h6>
+                        <small class="text-truncate text-body"
+                          >CPU Utilization Percent is currently at 88.63%,</small
+                        >
+                      </div>
+                      <div class="flex-shrink-0 dropdown-notifications-actions">
+                        <small class="text-muted">5 days ago</small>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-menu-footer border-top p-2">
+                <a href="javascript:void(0);" class="btn btn-primary d-flex justify-content-center">
+                  View all notifications
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--/ Notification -->
+
+          <!-- User -->
+          <li class="nav-item navbar-dropdown dropdown-user dropdown">
+            <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+              <div class="avatar avatar-online">
+                <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+              </div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="pages-account-settings-account.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar avatar-online">
+                        <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <span class="fw-medium d-block">John Doe</span>
+                      <small class="text-muted">Admin</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-account-outline me-2"></i>
+                  <span class="align-middle">My Profile</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="goals_targets.php">
+                  <i class="mdi mdi-account-outline me-2"></i>
+                  <span class="align-middle">My Goal Sheet</span>
+                </a>
+              </li>
+               <li>
+                <a class="dropdown-item" href="goals_targets.php">
+                  <i class="mdi mdi-account-outline me-2"></i>
+                  <span class="align-middle">My Target Sheet</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-account-outline me-2"></i>
+                  <span class="align-middle">My Follow Up</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-account-outline me-2"></i>
+                  <span class="align-middle">My Earnings</span>
+                </a>
+              </li>
+                <li>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-account-outline me-2"></i>
+                  <span class="align-middle">My To do List</span>
+                </a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+      
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="login.php" target="_blank">
+                  <i class="mdi mdi-logout me-2"></i>
+                  <span class="align-middle">Log Out</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--/ User -->
+        </ul>
+      </div>
+
+      <!-- Search Small Screens -->
+      <div class="navbar-search-wrapper search-input-wrapper d-none">
+        <input
+          type="text"
+          class="form-control search-input container-xxl border-0"
+          placeholder="Search..."
+          aria-label="Search..." />
+        <i class="mdi mdi-close search-toggler cursor-pointer"></i>
+      </div>
+    </nav>
+<!-- / Navbar -->          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+             <div class="container-xxl flex-grow-1 container-p-y">
+                <div class="card-header d-flex justify-content-between align-items-center py-2">
+                  <h5><span class="text-muted fw-light">System Admin /</span> Company Info Details</h5>
+  
+                </div>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-label-primary py-2">
+                        <h5 class="mb-0">Company Info:</h5>
+  
+                        <a href="javascript: history.go(-1)" class="ms-2 btn  btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Back to list"><span class="mdi mdi-keyboard-backspace"></span></a>
+                    </div>
+                    <div class="card-body">
+                      <h6 class="text-primary">01: Details</h6>
+                      <hr>
+                      <div class="row">
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Company Name:</label>
+                                  <span class="text-black">ADITYA Nayak</span>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Alias:</label>
+                                  <span class="text-black">Not Available</span>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Company ID:</label>
+                                  <span class="text-black">eq-660264</span>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Company Type:</label>
+                                  <span class="text-black">Corporate Office</span>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-12">   
+                            <div class="mb-3">
+                                <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Incorporation No:</label>
+                                <span class="text-black">Not Available</span>
+                            </div>
+                          </div>
+                          
+
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">TAX Certificate Details:</label>
+                                  <span class="text-black">Not Available</span>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">PAN Details:</label>
+                                  <span class="text-black">Not Available</span>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Country:</label>
+                                  <span class="text-black">Not Available</span>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">City:</label>
+                                  <span class="text-black">Bhubaneswar</span>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-12">
+                              <div class="mb-3">
+                                  <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">PAN:</label>
+                                  <span class="text-black">Not Available</span>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-4 col-12">
+                            <div class="mb-3">
+                                <label for="defaultInput" class="fw-semibold">Incorporation Certificate:</label>
+                                <img src="assets/img/customizer/border.svg" width="150" class="thumbnail ezoom" height="100" alt="Logo">   
+                            </div>
+                          </div>
+                      </div>
+                      <div class="divider text-start">
+                        <div class="divider-text fs-6 text-primary">02: Brand Info</div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="mb-3">
+                                <label for="defaultInput" class="fw-semibold">Upload Logo:</label>
+                                <img src="assets/img/branding/brand-img-light.png" class="thumbnail ezoom" alt="Logo">   
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-12">
+                            <div class="mb-3">
+                                <label for="defaultInput" class="fw-semibold">Favicon:</label>
+                                <img src="assets/img/branding/logo.png" class="thumbnail ezoom" alt="Logo">   
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-12">
+                            <div class="mb-3">
+                                <label for="defaultInput" class="fw-semibold">Header (Letterhead):</label>
+                                <img src="assets/img/branding/brand-img-light.png" class="thumbnail ezoom" alt="Logo">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-12">
+                            <div class="mb-3">
+                                <label for="defaultInput" class="fw-semibold">Header (Letterhead):</label>
+                                <img src="assets/img/branding/brand-img-light.png" alt="Logo">   
+                            </div>
+                          </div>
+                      </div>
+                      <div class="divider text-start">
+                        <div class="divider-text fs-6 text-primary">03: Business Details</div>
+                      </div>
+                        <div class="row">
+                          <div class="col-md-12 col-12">
+                            <div class="mb-3">
+                                <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Address:</label>
+                                <span class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                            </div>
+                          </div>
+                        </div>
+                       <div class="divider text-start">
+                        <div class="divider-text fs-6 text-primary">04: Contact Info</div>
+                      </div>
+                     <div class="row">
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Name:</label>
+                            <span class="text-black">ADITYA Nayak</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Designation:</label>
+                            <span class="text-black">Not Available</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Role:</label>
+                            <span class="text-black">eq-660264</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                              <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Email Id:</label>
+                              <span class="text-black"><a href="mailto:devnaditya@gmail.com">devnaditya@gmail.com</a></span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Phone No:</label>
+                            <span class="text-black">Not Available</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">   
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">WhatsApp No:</label>
+                            <span class="text-black">Not Available</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="divider text-start">
+                        <div class="divider-text fs-6 text-primary">05: Social Details</div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Name:</label>
+                            <span class="text-black">ADITYA Nayak</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">URL:</label>
+                            <span class="text-black">http://localhost/real_estate_crm/company_info.php</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                              <label for="defaultInput" class="fw-semibold">Favicon:</label>
+                              <img src="assets/img/branding/logo.png" class="thumbnail ezoom" alt="Logo">   
+                          </div>
+                        </div>
+                      </div>
+                      <div class="divider text-start">
+                        <div class="divider-text fs-6 text-primary">06: Other Details</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Name:</label>
+                            <span class="text-black">ADITYA Nayak</span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="mb-3">
+                            <label class="fw-semibold" for="exampleFormControlReadOnlyInputPlain1">Example textarea:</label>
+                            <span class="text-black">Not Available</span>
+                          </div>
+                        </div>
+                       
+                      </div>
+
+                  </div>
+
+                </div>
+                
+             </div>
+            <!-- / Content -->
+                 <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-between py-3 flex-md-row flex-column">
+                  <div class="mb-2 mb-md-0">
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    All Rights Reserved. Powered By 
+                    <a href="#" target="_blank" class="footer-link fw-medium">IYROERP</a>
+                  </div>
+                  <div class="d-none d-lg-inline-block">
+                    <!-- <a href="#" class="footer-link me-4" target="_blank">License</a>
+                    <a href="#" target="_blank" class="footer-link me-4">More Themes</a>
+                    <a href="#" target="_blank" class="footer-link me-4">Documentation</a> -->
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+       
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+      <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS-->
+    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="assets/vendor/libs/swiper/swiper.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- Page JS -->
+    <script src="assets/js/dashboards-analytics.js"></script>
+      <!-- Vendors JS -->
+    <script src="assets/vendor/libs/@form-validation/umd/bundle/popular.min.js"></script>
+    <script src="assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js"></script>
+    <script src="assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js"></script>
+     <!-- Page JS -->
+    <script src="assets/js/pages-auth.js"></script>
+
+    
+  <!-- datatables-bootstrap5 -->
+
+  <script>
+    $(function() {
+        var dt_basic_table = $('.myDataTable'),
+            dt_basic;
+        if (dt_basic_table.length) {
+            dt_basic = dt_basic_table.DataTable({
+                dom: '<"row"<"col-sm-12 col-md-4"l><"col-sm-12 col-md-5"<"dt-action-buttons text-end pt-3 pt-md-0 my-3"B>><"col-sm-12 col-md-3 d-flex justify-content-center justify-content-md-end"f>>t<"row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
+                //   displayLength: 7,
+                lengthMenu: [10, 25, 50, 75, 100],
+                buttons: [{
+                        extend: 'colvis',
+                        className: 'btn btn-label-primary' // Add your custom class here
+                    },
+                    {
+                        extend: 'collection',
+                        className: 'btn btn-label-primary dropdown-toggle me-2',
+                        text: '<i class="mdi mdi-export-variant me-sm-1"></i> <span class="d-none d-sm-inline-block">Export</span>',
+                        buttons: [{
+                                extend: 'print',
+                                text: '<i class="mdi mdi-printer-outline me-1" ></i>Print',
+                                className: 'dropdown-item'
+                            },
+                            {
+                                extend: 'csv',
+                                text: '<i class="mdi mdi-file-document-outline me-1" ></i>Csv',
+                                className: 'dropdown-item'
+                            },
+                            {
+                                extend: 'excel',
+                                text: '<i class="mdi mdi-file-excel-outline me-1"></i>Excel',
+                                className: 'dropdown-item',
+                            },
+                            {
+                                extend: 'pdf',
+                                text: '<i class="mdi mdi-file-pdf-box me-1"></i>Pdf',
+                                className: 'dropdown-item'
+                            },
+                            {
+                                extend: 'copy',
+                                text: '<i class="mdi mdi-content-copy me-1" ></i>Copy',
+                                className: 'dropdown-item'
+                            }
+                        ]
+                    },
+                ],
+            });
+        }
+    });
+</script>
+
+  <script>
+    (function ($) {
+      'use strict'
+      var currentPath = window.location.href;
+      document.querySelectorAll('.menu-item > .menu-link').forEach(function (link) {
+          var href = link.getAttribute('href');
+          if (href && currentPath.indexOf(href) !== -1) {
+              link.closest('.menu-item').classList.add('active');
+          }
+      });
+      document.querySelectorAll('.menu-item:has(.menu-sub .active)').forEach(function (item) {
+          item.classList.add('open');
+      });
+    })(jQuery);
+    
+  </script> 
+
+
+ </body>
+</html>
+ <!-- Vendors JS -->
+
+<script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+<script src="assets/vendor/libs/select2/select2.js"></script>
+<!-- Company Info tab JS -->
+<script src="assets/js/form-wizard-icons.js"></script>
+<!-- Vendors JS -->
+<script src="assets/vendor/libs/quill/katex.js"></script>
+<script src="assets/vendor/libs/quill/quill.js"></script>
+<script src="assets/js/forms-editors.js"></script>

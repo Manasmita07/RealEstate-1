@@ -107,6 +107,7 @@ import Village from "./components/BusinessManagement/Location/Village";
 import AreaGram from "./components/BusinessManagement/Location/AreaGram";
 import Pin from "./components/BusinessManagement/Location/Pin";
 import { Toaster } from "react-hot-toast";
+import CompanyInfoDetails from "./components/system admin/CompanyInfoDetails";
 
 import Profile from "./components/EmployeeManagement/Profile";
 import Agent_Type from "./components/AgentManagement/Agent_Type";
@@ -156,6 +157,7 @@ const App = () => {
             />
             <Route element={<SystemAdmin />}>
               <Route path="systemAdmin/companyInfo" element={<CompanyInfo />} />
+              <Route path="systemAdmin/companyInfoDetails" element={<CompanyInfoDetails />} />
               <Route
                 path="systemAdmin/companyInfoForm"
                 element={<CompanyForm />}

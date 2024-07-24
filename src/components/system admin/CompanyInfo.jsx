@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useGetBranch } from "../../hooks/systemAdmin/useGetCompanyDetails";
 import Title from "./subItem/Title";
 function CompanyInfo() {
@@ -127,6 +128,7 @@ function CompanyInfo() {
                     <tbody>
                       {
                         data?.data?.length>0 && data?.data?.map((company,index)=>{
+                          console.log(company);
                           return (
                             <tr key={index}>
                               <td className="sorting_1">{index+1}</td>
@@ -134,15 +136,18 @@ function CompanyInfo() {
                               <td>{company.companyid}</td>
                               <td>{company.incorporation_no}</td>
                               <td>
-                          <a
-                            href="companyinfo_view.php"
+                          <Link
+                            to={{
+                              pathname: `/systemAdmin/companyInfoDetails`,
+                              state: {company}
+                            }}
                             className="btn btn-text-primary btn-sm small py-1 px-2 waves-effect waves-light"
                             data-bs-toggle="tooltip"
                             data-bs-placement="top"
                             data-bs-original-title="View"
                           >
                             <i className="mdi mdi-eye"></i>
-                          </a>
+                          </Link>
                           <a
                             href=""
                             className="btn btn-text-dark btn-sm small py-1 px-2 waves-effect waves-light"
